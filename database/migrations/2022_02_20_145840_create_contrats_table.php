@@ -16,9 +16,9 @@ return new class extends Migration
         Schema::create('contrats', function (Blueprint $table) {
             $table->id();
             $table->text('detail_contrat');
-            $table->boolean('status')->default(true);
             $table->foreignId('employe_id')->Contrained();
             $table->foreignId('post_id')->Contrained();
+            $table->boolean('active')->default(true);
             $table->timestamps();
         });
     }

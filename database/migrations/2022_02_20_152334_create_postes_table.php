@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('postes', function (Blueprint $table) {
             $table->id();
             $table->string('post',100)->nullable();
+            $table->boolean('etat')->default(true);
             $table->timestamps();
         });
     }

@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class employe extends Model
 {
     use HasFactory;
+
+    public function contrat(){
+        return $this->hasOne(contrat::class);
+    }
 }
+

@@ -17,7 +17,8 @@ class ContratFactory extends Factory
     public function definition()
     {
         return [
-            //
+            //remplir ma base de données avec des données fictives 
+            'detail_contrat' => $this->faker->paragr
         ];
     }
 }
